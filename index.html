@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick Weather</title>
+    <meta charset="UTF-8">
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Gothic+A1&display=swap" rel="stylesheet">
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 class="main-header">Quick Weather</h1>
+      <div class="form-container">
+        <form id="weather-form">
+          <label for="city">City</label>
+          <input type="text" id="city" required>
+          <label for="country-code">Country Code</label>
+          <input type="text" id="country-code" required>
+          <div class="measurement-btns">
+            <input type="radio" name="measurement" value="imperial" checked> Fahrenheit
+            <input type="radio" name="measurement" value="metric"> Celsius
+          </div>
+          <input type="submit" id="submit" value="Get Weather">
+        </form>
+      </div>
+      <div class="results">
+      </div>
+    </div>
+  </body>
+</html>

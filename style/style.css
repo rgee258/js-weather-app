@@ -1,0 +1,191 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General Styling */
+
+body {
+  background-image: linear-gradient(to right, #00001a, #ccccff, #00001a);
+}
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input {
+  text-align: center;
+}
+
+/* Wrapper */
+
+#wrapper {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* Main Header */
+
+.main-header {
+  font-size: 3.5rem;
+  margin-top: 2%;
+}
+
+/* Weather Form */
+
+.form-container {
+  width: 30%;
+  margin: 2% 0;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 1.05rem;
+  border: 1px black solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#weather-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+}
+
+#weather-form input {
+  margin: 3% 0;
+}
+
+#weather-form #submit {
+  padding: 3%;
+  font-size: 0.9rem;
+  border: 1px black solid;
+  background-color: #99e6ff;
+}
+
+/* Results */
+
+.results {
+  width: 55%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Results - Error */
+
+.results .error-container {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: #b30000;
+}
+
+/* Results - Weather */
+
+.results .weather-container {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 5px;
+  font-size: 2.75rem;
+}
+
+.results .weather-container .temperature {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.hot {
+  background-color: #ff1a1a;
+}
+
+.warm {
+  background-color: #ff6600;
+}
+
+.moderate {
+  background-color: #66ff66;
+}
+
+.chilly {
+  background-color: #99ccff;
+}
+
+.cold {
+  background-color: #3333ff;
+}
